@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+</head>
+
+<body id=general>
+    <div id="page" class="pageWidth">
+        <nav class="pageWidth">
+            <a href="index.html">
+                <img src="images/home.png" height="30" width="60" />
+            </a>
+        </nav>
+        <header>
+            <h1><span id="title">Student Registration System</span></h1>
+            <h4><span id="shadow">Final project for cs303</span></h4>
+            <div id="login">
+                <div id="loginBlock">
+                    <label>user name </label><input type="text" id="userName"><br />
+                    <label>password &nbsp;</label><input type="password" id="password"><br />
+                </div>
+                <button onclick="login()" id="btnLogin">loging</button>
+                <button onclick="newUser()" id="btnCreate">Create</button>
+                <label id="errorLogin" class="error"></label>
+            </div>
+        </header>
+        <main class="table" id="main">
+            <div class="row">
+                <section class="cell leftSection">
+                    <div id="verticalNav">
+                        <ul>
+                            <li><button onclick="viewAllCourses()">View All courses</button></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="cell centerSection" id="centerSection">
+                    <table>
+                        <tr>
+                            <td>
+                                <button onclick="sortCoursesByCode()" id="btnCourses">Sort by code</button>
+                            </td>
+                            <td>
+                                <button onclick="sortCoursesByCourseName()" id="btnCourses">Sort by name</button>
+                            </td>
+                            <td>
+                                <input type="text" id="searchByName">
+                                <button onclick="searchByName()" id="btnCourses">Sort by name</button>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table id="viewData">
+                       <tr>
+                           <th>
+                       </tr>
+                    </table>
+
+                </section>
+                <section class="cell rightSection" id="rightSection">
+
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
